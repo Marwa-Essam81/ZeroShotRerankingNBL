@@ -21,7 +21,7 @@ b) Retrieve an initial set of background links for each query article. An exampl
 
 3- Now, for each of the encoders that we compare in this paper, you will find a python file that has methods for:
 
-a) Encoding all queries as explained in the paper, and writing an encoding file for each query in a directory. The file for each query contains the encodings of its title and paragraphs. For Bigbird and LongFormer, it includes the encodings of the passages generated as explained in the paper.
+a) Encoding all queries as explained in the paper, and writing an encoding file for each query in a directory. The file for each query contains the encodings of its title and paragraphs. For Bigbird and LongFormer, it includes the encodings of the passages generated as explained in the paper. To run the encoding for queries, you need to have a queries text file that has two lines for each query: one that contains query information like its document id, and title, and another line for the query json object. For license rules, we can't share the queries data. However, an example of this file format is given in this repository.
 
 b) Encoding candidates background links for queries.  The file of each candidate contains the encoding of the whole candidate text.
 
