@@ -106,16 +106,11 @@ def accessDatabase(statement):
     return myresult
 
 def getQueriesId(queriesfile):
-    toggle = True
     queriesIds = {}
     with open(queriesfile, encoding='utf-8') as f:
         for line in f:
-            if toggle:
-                data = line.split(",")
-                queriesIds[data[1]] = data[0]
-                toggle = False
-            else:
-                toggle = True
+            data = line.split(",")
+            queriesIds[data[1]] = data[0]
     return queriesIds
 
 def loadCandidateIdsFromBaselineFile(baselineFile):
