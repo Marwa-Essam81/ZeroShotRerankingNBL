@@ -6,7 +6,7 @@ You need to run the following in order to rerank candidate resources for News Ba
 
 1- Create an inverted index for the news articles collection. You will find Java files for creating the inverted index for the Washignton Post collection in Lucene V8: indexer.java luceneIndex.java thIndexer.java
 
-- In order to create the index, you need to download first the Washington Post V3 collection file from https://trec.nist.gov/
+- In order to create the index, you need to download first the Washington Post collection file from https://trec.nist.gov/ . The dataset is publicly available but you need to sign first an organizational aggrement form. Make Sure you request V3 of this collection.
 - The indexer class will first split this file into multiple files for quicker indexing process, then it will call multiple threads to start indexing.
 - You need to have these dependencies in your created java project: JSOUP, Lucene V8.0 ,JSON
 Preprocessing needs a stop words file also (provided in this directory)
