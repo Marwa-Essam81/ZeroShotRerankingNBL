@@ -1,6 +1,6 @@
 # ZeroShotRerankingNBL
 
-This is the source code for the paper with the title: Zero-Shot Reranking with Encoder Models for News Background Linking.
+This is the source code for the paper with the title: Zero-Shot Reranking with Dense Encoder Models for News Background Linking.
 
 You need to run the following in order to rerank candidate resources for News Background Linking as explained in the paper.
 
