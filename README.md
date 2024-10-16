@@ -9,8 +9,8 @@ Required Data:
 - For preprocessing the news articles, you need the stop words file provided in this directory.
 
 **1) Indexing the data:**
-* Export the archive **ZeroShotDenseNBL.zip** archive.
-* Create a maven project using the exported directory. This directory contains the **<Pom.xml>** file that defines the required dependencies for this project.
+* Unarchive **ZeroShotDenseNBL.zip**.
+* Create a maven project using the unarchived directory. This directory contains the **<Pom.xml>** file that defines the required dependencies for this project.
 * Compile your project 
 * To create an inverted index for the data, run **<indexer.class>**. The indexer class will first split the dataset file into multiple files for a quick indexing process, then it will call multiple threads to start indexing.
 
@@ -18,7 +18,6 @@ Required Data:
 * Use a local SQL engine such as SQLPro to create a database **"WPostDB"**.
 * Import the provided file : **WPostDB.sql** into your created database to create the required tables.
 * Run **<Database.class>** from within your maven project to insert the news articles from the dataset into the created database.
-
 
 **3) Retrieve the Candidate Background Links:**
 * Run **<BackgroundLinking.class>**.
